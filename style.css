@@ -316,9 +316,9 @@ btn-1 {
   color: white;
 }
 
- #projects {
-  margin: auto;
-  align-items: center;
+.view-icon:hover {
+  cursor: pointer;
+  background: grey;
 } 
 
 .exp {
