@@ -17,7 +17,7 @@ nav{
 
 #desktop-nav {
   background: #222222;
-  padding-right: 200px;
+  /* padding-right: 200px; */
 
 }
 
@@ -33,6 +33,7 @@ nav{
   justify-content: space-around;
   font-size: 15px;
   font-weight: 600px;
+  font-family: "Poppins";
 }
 a {
   text-decoration: none;
@@ -43,7 +44,7 @@ a {
 a:hover {
   color: #8491a0;
   text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-underline-offset: 10px;
   text-decoration-color: #c5c5c5;
 }
 
@@ -128,10 +129,6 @@ a:hover {
 }
 
 
-
-
-
-
 .my-image-container {
   padding-top: 100px;
 }
@@ -150,27 +147,30 @@ a:hover {
   width: 50%;
   text-align: center;
   margin: auto;
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
   color: #ffffff;
   padding-top: 30px;
+  font-family: poppins;
 }
 .about-text {
   margin: auto;
   width: 50%;
   text-align: center;
-  font-family: "poppins";
+  font-family: poppins;
   color: #c5c5c5;
   font-size: 12px;
   padding-top: 20px;
 }
 
 .btn-sec {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
   text-align: center;
   padding-top: 20px;
+  gap: 10px;
 }
 .btn-1,
 .btn-2 {
@@ -189,6 +189,18 @@ btn-1 {
   color: #161513;
 }
 
+.btn-1:hover {
+  cursor: pointer;
+  background: #161513;
+  color: #ffffff;;
+}
+
+.btn-2:hover {
+  cursor: pointer;
+  background: grey;
+}
+
+
 .btn-2 {
   border-width: 2px, 2px, 2px, 2px;
   border-style: solid;
@@ -198,7 +210,7 @@ btn-1 {
 }
 
 .experience-title {
-  font-family: Poppins;
+  font-family: poppins;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
@@ -219,7 +231,7 @@ btn-1 {
 }
 
 .sec_heading {
-  font-family: Poppins;
+  font-family: poppins;
   font-size: 31px;
   font-weight: 800;
   text-align: center;
@@ -232,224 +244,64 @@ btn-1 {
 }
 
 .rectangle {
-  width: 390px;
-  height: 301px;
-  border-radius: 18px;
-  margin-top: 70px;
-  margin-left: 250px;
-  background: #2a2a2a;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  color: white;
+  font-family: system-ui;
+  overflow: hidden;
+  justify-content: center;
 }
+
+.img-container {
+  width: 400px;
+  height: 325px;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+}
+
 .my_projects {
-  padding-top: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap:wrap;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 550px;
+
+
 }
 
-.digital_card {
-  width: 390px;
-  height: 300px;
-  border-radius: 18px, 18px, 0px, 0px;
-  margin-bottom: 120px;
-  margin-left: 250px;
-  margin-top: -350px;
-}
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+} 
 
-.project-1-click {
-  width: 156.84px;
-  height: 40px;
-  margin-top: -120px;
-  margin-left: 260px;
-}
-
-.ctv-1 {
-  font-family: Poppins;
-  font-size: 10px;
-  font-weight: 800;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #c5c5c5;
-}
-.digital-caption {
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 800;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ffffff;
-}
-
-.view-icon-1 {
-  width: 15.17px;
-  height: 14.09px;
-  margin-top: -30px;
-  margin-bottom: 600px;
-  margin-left: 600px;
-  cursor: pointer;
-}
-
-.rec-2 {
-  width: 390px;
-  height: 301px;
-  border-radius: 18px;
-  background: #2a2a2a;
-  margin-left: 680px;
-  margin-top: -880px;
-}
-
-.to_do {
-  width: 390px;
-  height: 300px;
-  border-radius: 18px, 18px, 0px, 0px;
-  margin-top: -342px;
-  margin-bottom: 120px;
-  margin-left: 680px;
-}
-
-.view-icon-2 {
-  width: 15.17px;
-  height: 14.09px;
-  margin-top: -110px;
-  margin-bottom: 600px;
-  margin-left: 1040px;
-  cursor: pointer;
-}
-
-.ctv-2 {
-  font-family: Poppins;
-  font-size: 10px;
-  font-weight: 800;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #c5c5c5;
-}
-.todo_list {
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 800;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ffffff;
-}
-
-.project-2-click {
-  width: 156.84px;
-  height: 40px;
-  margin-top: -50px;
-  margin-left: 690px;
-}
-
-.rec-3 {
-  width: 390px;
-  height: 301px;
-  border-radius: 18px;
-  margin-top: -500px;
-  margin-left: 250px;
-  background: #2a2a2a;
-}
-
-.portfolio_picture {
-  width: 390px;
-  height: 301px;
-  border-radius: 18px, 18px, 0px, 0px;
-  margin-top: -350px;
-  margin-bottom: 120px;
-  margin-left: 250px;
-}
-
-.project-3-click {
-  width: 156.84px;
-  height: 40px;
-  margin-top: -120px;
-  margin-left: 260px;
-}
-
-.ctv-3 {
-  font-family: Poppins;
-  font-size: 10px;
-  font-weight: 800;
-  text-align: left;
-  color: #c5c5c5;
-}
-.portfolio-caption {
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: left;
-  color: #ffffff;
-}
-
-.view-icon-3 {
-  width: 15.17px;
-  height: 14.09px;
-  margin-top: -30px;
-  margin-bottom: 600px;
-  margin-left: 610px;
-  cursor: pointer;
-}
-
-.rec-4 {
-  width: 390px;
-  height: 301px;
-  border-radius: 18px;
-  background: #2a2a2a;
-  margin-left: 680px;
-  margin-top: -880px;
-}
-
-.game_app_picture {
-  width: 390px;
-  height: 301px;
-  border-radius: 18px, 18px, 0px, 0px;
-  margin-top: -354px;
-  margin-bottom: 120px;
-  margin-left: 680px;
-}
-
-.view-icon-4 {
-  width: 15.17px;
-  height: 14.09px;
-  margin-top: -30px;
-  margin-bottom: 600px;
-  margin-left: 1040px;
-  cursor: pointer;
-}
-
-.ctv-4 {
-  font-family: Poppins;
-  font-size: 10px;
-  font-weight: 800;
-  text-align: left;
-  color: #c5c5c5;
-}
-.portfolio-caption {
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: left;
-  color: #ffffff;
-}
-
-.project-4-click {
-  width: 156.84px;
-  height: 40px;
-  margin-top: -120px;
-  margin-left: 690px;
-}
-
-.experience_heading {
+  .experience_heading {
   font-family: Poppins;
   font-size: 35px;
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -450px;
   background: linear-gradient(180deg, #5badff 0%, #1373d1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  
 }
 
 .experience-container {
@@ -464,13 +316,13 @@ btn-1 {
   color: white;
 }
 
-#projects {
+ #projects {
   margin: auto;
   align-items: center;
-}
+} 
 
 .exp {
-  font-family: Poppins;
+  font-family: poppins;
   font-style: normal;
   font-weight: 400;
   font-size: 12.4937px;
@@ -484,17 +336,18 @@ btn-1 {
 .exp-time {
   color: #8491a0;
   font-size: 12px;
-}
+} 
 
 #contact {
   background: #191919;
   margin-top: 100px;
 }
 #footer {
-  width: 65%;
+  width: 100%;
   align-items: center;
   margin: auto;
   padding: 50px 0;
+  font-family: poppins;
 }
 
 .whatsapp_logo {
@@ -506,7 +359,6 @@ btn-1 {
   display: flex;
   flex-direction: row;
   padding-top: 20px;
-  /* float: left; */
   width: 80%;
   color: #c5c5c5;
 }
@@ -520,4 +372,5 @@ btn-1 {
 .contact {
   color: #ffffff;
   padding-bottom: 20px;
-}
+  font-family: poppins;
+} 
